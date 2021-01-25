@@ -12,7 +12,9 @@ p {
 img {
 	display: block;
 }
-
+.header_menu ul li .menu_ativo{
+	color: #FFF;
+}
 .btn {
 	border: 3px solid #fec63e;
 	padding: 10px 30px;
@@ -51,6 +53,52 @@ img {
 	height: 3px;
 	background: #000;
 	margin: 8px auto;
+}
+/*	Introdução interna 	*/
+.introducao-interna{
+	width: 100%;
+	margin-top: 92px;
+	height: 160px;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
+}
+
+.introducao-interna h1 {
+	font-size: 36px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.introducao-interna h1:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 6px auto 10px auto;
+}
+
+.subtitulo-interno {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.1px;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 20;
+}
+
+.subtitulo-interno:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 8px 0;
 }
 
 /*  Header  */
@@ -162,9 +210,10 @@ img {
 .produtos_lista li p {
 	padding: 10px 20px 20px 20px;
 }
+
 .produtos_icone {
 	background: #000;
-	padding: 20px;
+	padding: 20px 20px 20px 50px;
 	text-align: center;
 }
 
@@ -245,3 +294,75 @@ img {
 	background: #000;
 	margin: 6px auto;
 }
+
+.quebra{
+	width: 100%;
+	height: 220px;
+	background: url(../img/bg/bg-footer.jpg) no-repeat center;
+	background-size: cover; 
+	text-align: center;
+	padding-top: 40px;
+}
+
+.quebra .quote_externo{
+	max-width: 400px;
+}
+
+.footer{
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.footer h3{
+	font-size: 18px;
+	line-height: 25px;
+	color: #fec63e;
+	text-transform: uppercase;
+	letter-spacing: .1 em;
+	font-weight: bold;
+
+}
+
+.footer h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fec63e;
+	margin: 6px 0 12px 0;
+}
+
+.footer_hist{
+	padding-right: 40px;
+}
+
+.footer_contato ul li{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_sociais ul li{
+	display: inline-block;
+}
+
+.footer_sociais ul li a{
+	border: 3px solid #fec63e;
+	display: block;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.footer_sociais ul li a:hover{
+	border-color: #FFF;
+}
+
+.copy{
+	width: 100%;
+	background: #fec63e;
+	padding: 20px 0;
+	font-weight: bold;
+}
+
