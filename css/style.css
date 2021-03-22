@@ -11,10 +11,13 @@ p {
 
 img {
 	display: block;
+	max-width: 100%;
 }
+
 .header_menu ul li .menu_ativo{
 	color: #FFF;
 }
+
 .btn {
 	border: 3px solid #fec63e;
 	padding: 10px 30px;
@@ -190,6 +193,10 @@ img {
 	text-align: center;
 }
 
+.produtos_lista li img{
+	margin: 0;
+} 
+
 .produtos_lista li h3 {
 	font-weight: bold;
 	font-size: 18px;
@@ -198,6 +205,7 @@ img {
 	letter-spacing: 0.1em;
 	margin-top: 20px;
 }
+
 .produtos_lista li h3::after {
 	content: "";
 	display: block;
@@ -365,4 +373,3 @@ img {
 	padding: 20px 0;
 	font-weight: bold;
 }
-
