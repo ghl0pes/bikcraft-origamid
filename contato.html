@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/responsivo.css">
+
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -34,13 +36,13 @@
 
     <section class="introducao-interna interna-contato">
         <div class="container">
-            <h1>Contato</h1>
-            <p>Tire as suas dúvidas com a gente</p>      
+            <h1 data-anime="200" class="fadeInDown">Contato</h1>
+            <p data-anime="400" class="fadeInDown">Tire as suas dúvidas com a gente</p>      
         </div>
     </section>
 
     
-    <section class="contato container">
+    <section class="contato container fadeInDown" data-anime="400">
         <div class="contato-flex">
             <form id="form-orcamento" class="grid-8 contato-form">
                 <label for="nome">Nome</label>
@@ -118,6 +120,9 @@
         </div>
     </footer>
 
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

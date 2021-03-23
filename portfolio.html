@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -34,25 +35,61 @@
 
     <section class="introducao-interna interna-portfolio">
         <div class="container">
-            <h1>Portifólio</h1>
-            <p>Conheça nossos projetos que amamos mostrar</p>       
+            <h1 data-anime="200" class="fadeInDown">Portifólio</h1>
+            <p data-anime="400" class="fadeInDown">Conheça nossos projetos que amamos mostrar</p>       
         </div>
     </section>
 
-    <section>
+    <section class="container fadeInDown" data-slide="quote" data-anime="600">
         <blockquote class="quote-clientes">
             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iure sint, architecto, illum explicabo velit animi id, quaerat reprehenderit iste pariatur. Esse ex veritatis voluptatem beatae laudantium sapiente odio adipisci."</p>
-            <cite>Bárbara Moss</cite>
+            <cite>Tom Brady</cite>
+        </blockquote>
+
+        <blockquote class="quote-clientes">
+            <p>"ed at posuere leo. Phasellus maximus viverra mollis. Ut leo ex, tincidunt fermentum posuere id, pharetra vitae sem. Aliquam ultrices lorem vel sagittis tempus. Pellentesque venenatis ultrices ante, id porttitor velit pretium et. Quisque porttitor fermentum scelerisque."</p>
+            <cite>Aaron Rodgers</cite>
+        </blockquote>
+
+        <blockquote class="quote-clientes">
+            <p>"Aliquam in hendrerit eros, id malesuada augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus non tortor nunc. Duis vitae hendrerit ipsum. Nunc ante quam, efficitur at convallis id, ultrices nec magna. Integer nunc nulla, malesuada a metus eu, pellentesque pretium augue."</p>
+            <cite>John Montana</cite>
+        </blockquote>
+
+        <blockquote class="quote-clientes">
+            <p>"n hac habitasse platea dictumst. Vestibulum eget tortor leo. Sed cursus, ex eu ultrices egestas, arcu lacus sagittis est, et lacinia metus sapien in sapien. Cras nec arcu quis arcu ultricies tincidunt in a urna. Aenean sit amet dictum neque. Maecenas ac euismod purus, ut tincidunt tortor. Nulla posuere justo ac nisl hendrerit gravida. Sed dapibus quam vel massa fringilla euismod."</p>
+            <cite>Peyton Manning</cite>
         </blockquote>
     </section>
 
     <section class="portfolio">
-        <div class="container">
+        <div class="container" data-slide="portfolio">
             <ul class="portfolio_lista">
                 <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bike Retrô"></li>
                 <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bike Passeio"></li>
                 <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bike Esporte"></li>
             </ul>
+
+            <ul class="portfolio_lista">
+                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bike Passeio"></li>
+                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bike Retrô"></li>            
+                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bike Esporte"></li>
+            </ul>
+
+            <ul class="portfolio_lista">
+                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bike Esporte"></li>
+                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bike Passeio"></li>
+                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bike Retrô"></li>            
+                
+            </ul>
+
+            <ul class="portfolio_lista">
+                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bike Esporte"></li>
+                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bike Retrô"></li>
+                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bike Passeio"></li>
+ 
+            </ul>
+
         </div>
     </section>
     
@@ -99,7 +136,9 @@
         </div>
     </footer>
 
-
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

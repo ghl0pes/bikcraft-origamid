@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/responsivo.css">
+
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
@@ -34,13 +36,13 @@
 
     <section class="introducao-interna interna-sobre">
         <div class="container">
-            <h1>Sobre</h1>
-            <p>Conheça mais a Bikcraft</p>
+            <h1 data-anime="200" class="fadeInDown">Sobre</h1>
+            <p data-anime="400" class="fadeInDown">Conheça mais a Bikcraft</p>
             
         </div>
     </section>
 
-    <section class="missao-sobre container">
+    <section class="missao-sobre container fadeInDown" data-anime="600">
         <div class="grid-10">
             <h2 class="subtitulo-interno">História, Missão e Visão</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores animi eius deserunt voluptatem eveniet, illum soluta quaerat fuga aspernatur, tempora rerum delectus, expedita alias quasi ducimus nisi? Earum, sequi. Numquam?</p>
@@ -132,7 +134,9 @@
         </div>
     </footer>
 
-
+    <script src="js/simple-anime.js"></script>
+    <script src="js/simple-slide.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
