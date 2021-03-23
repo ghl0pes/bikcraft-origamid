@@ -375,6 +375,15 @@ img {
 	font-weight: bold;
 }
 
+#form-sucesso {
+	color: green;
+}
+
+#form-erro {
+	color: red;
+}
+
+
 /* JS */
 .js [data-slide] {
 	position: relative;

@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bikcraft - Contato</title>
+    <title>Bikcraft - Contato - Bicicletas Personalizadas</title>
+
+    <meta name="description" content="Mande uma mensagem para a gente! Iremos retornar o mais breve possível com o projeto de sua bike">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Bikcraft - Contato - Bicicletas Personalizadas"/>
+    <meta property="og:description" content="Mande uma mensagem para a gente! Iremos retornar o mais breve possível com o projeto de sua bike"/>
+    <meta property="og:url" content="https://bikcraft.com.br"/>
+    <meta property="og:image" content="https://bikcraft.com.br/img/og-image.png"/>
+
+    <link rel="shortcut icon" href="https://bikcraft.com.br/favicon.ico">
+    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -44,16 +55,16 @@
     
     <section class="contato container fadeInDown" data-anime="400">
         <div class="contato-flex">
-            <form id="form-orcamento" class="grid-8 contato-form">
+            <form id="form-orcamento" method="POST" action="enviar.php" class="grid-8 contato-form formphp">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" name="nome" required>
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="email" id="email" name="email" required>
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
-                <label for="espec">Especificações</label>
-                <textarea id="espec"></textarea>
-                <button type="submit" class="btn btn-preto">Enviar</button>
+                <input type="text" id="telefone" name="telefone" required>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
             </form>
             <div class="contato-dados grid-8">
                 <h3>Dados</h3>
@@ -122,6 +133,7 @@
 
     <script src="js/simple-anime.js"></script>
     <script src="js/simple-slide.js"></script>
+    <script src="js/simple-form.js"></script>
     <script src="js/script.js"></script>
 
 </body>

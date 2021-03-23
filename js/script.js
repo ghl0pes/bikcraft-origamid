@@ -13,3 +13,12 @@ if(window.SimpleSlide){
 if(window.SimpleAnime){
     new SimpleAnime();
 }
+
+if(window.SimpleForm) {
+	new SimpleForm({
+	  form: ".formphp", // seletor do formulário
+	  button: "#enviar", // seletor do botão
+	  erro: "<div id='form-erro'><h2>Erro no envio!</h2><p>Mande um email para gabriellopes1005@gmail.com dizendo que você tentou! Ficarei muito feliz</p></div>", // mensagem de erro
+	  sucesso: "<div id='form-sucesso'><h2>Formulário enviado com sucesso</h2><p>Em breve eu entro em contato com você.</p></div>", // mensagem de sucesso
+	});
+}
